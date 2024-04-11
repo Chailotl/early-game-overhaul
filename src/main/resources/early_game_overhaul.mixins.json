@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.chailotl.early_game_overhaul.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
