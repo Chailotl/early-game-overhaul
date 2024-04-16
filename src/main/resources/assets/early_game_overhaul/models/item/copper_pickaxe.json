@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "early_game_overhaul:item/copper_pickaxe"
+	}
+}

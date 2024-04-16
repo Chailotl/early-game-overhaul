@@ -1,0 +1,12 @@
+{
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"loot": [
+			"early_game_overhaul:grant_book_on_first_join"
+		]
+	}
+}

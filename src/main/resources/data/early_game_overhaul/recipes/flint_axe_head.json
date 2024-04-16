@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"#": {
+			"item": "minecraft:flint"
+		}
+	},
+	"pattern": [
+		"##",
+		"# "
+	],
+	"result": {
+		"item": "early_game_overhaul:flint_axe_head"
+	}
+}

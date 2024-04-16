@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "early_game_overhaul:item/rotten_leather"
+	}
+}

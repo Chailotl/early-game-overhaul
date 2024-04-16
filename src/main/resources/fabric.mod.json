@@ -1,22 +1,30 @@
 {
 	"schemaVersion": 1,
 	"id": "early_game_overhaul",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "Chai's Early Game Overhaul",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A vanilla-friendly overhaul to the early game progression",
 	"authors": [
-		"Me!"
+		"Chai"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/chais-early-game-overhaul/",
+		"sources": "https://github.com/chailotl/early-game-overhaul",
+		"issues": "https://github.com/chailotl/early-game-overhaul/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/SuZb3aJUCx"
+			}
+		}
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/early_game_overhaul/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.chailotl.early_game_overhaul.ChaisEarlyGameOverhaul"
+			"com.chailotl.early_game_overhaul.EarlyGameOverhaul"
 		]
 	},
 	"mixins": [
@@ -26,7 +34,9 @@
 		"fabricloader": ">=0.15.9",
 		"minecraft": "~1.20",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"lavender": "*",
+		"owo-lib": "*"
 	},
 	"suggests": {
 		"another-mod": "*"

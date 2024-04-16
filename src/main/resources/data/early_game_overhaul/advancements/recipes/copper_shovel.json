@@ -1,0 +1,27 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_copper_ingot": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:copper_ingot"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"has_copper_ingot"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"early_game_overhaul:copper_shovel"
+		]
+	}
+}

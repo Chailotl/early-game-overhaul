@@ -1,0 +1,25 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_sapling": {
+			"conditions": {
+				"items": [
+					{
+						"tag": "minecraft:saplings"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"has_sapling"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"early_game_overhaul:stick_from_sapling"
+		]
+	}
+}

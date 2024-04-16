@@ -1,0 +1,53 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"tries": 10,
+		"xz_spread": 7,
+		"y_spread": 3,
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:weighted_state_provider",
+						"entries": [
+							{
+								"weight": 1,
+								"data": {
+									"Name": "early_game_overhaul:copper_sample"
+								}
+							},
+							{
+								"weight": 3,
+								"data": {
+									"Name": "early_game_overhaul:coal_sample"
+								}
+							}
+						]
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_block_tag",
+						"offset": [
+							0,
+							-1,
+							0
+						],
+						"tag": "early_game_overhaul:surface_ore_may_place_on_rare"
+					}
+				}
+			]
+		}
+	}
+}

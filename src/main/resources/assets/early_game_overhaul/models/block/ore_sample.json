@@ -1,0 +1,59 @@
+{
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [9, 3, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 5, 3], "texture": "#ore"},
+				"east": {"uv": [2, 6, 7, 9], "texture": "#ore"},
+				"south": {"uv": [8, 13, 13, 16], "texture": "#ore"},
+				"west": {"uv": [11, 1, 16, 4], "texture": "#ore"},
+				"up": {"uv": [8, 4, 13, 9], "texture": "#ore"},
+				"down": {"uv": [0, 11, 5, 16], "texture": "#ore"}
+			}
+		},
+		{
+			"from": [6, 0, 7],
+			"to": [12, 4, 12],
+			"faces": {
+				"north": {"uv": [8, 3, 14, 7], "texture": "#ore"},
+				"east": {"uv": [7, 11, 12, 15], "texture": "#ore"},
+				"south": {"uv": [1, 11, 7, 15], "texture": "#ore"},
+				"west": {"uv": [5, 7, 10, 11], "texture": "#ore"},
+				"up": {"uv": [1, 6, 7, 11], "texture": "#ore"},
+				"down": {"uv": [0, 0, 6, 5], "texture": "#ore"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [10, -45, 0],
+			"translation": [0, 3, 0.5],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [9, 45, 0],
+			"translation": [0, 3, 0],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 6.5, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, 6.5, 0]
+		},
+		"ground": {
+			"translation": [0, 2.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [30, -112, 0],
+			"translation": [0, 6.25, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -6]
+		}
+	}
+}

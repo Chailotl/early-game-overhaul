@@ -1,0 +1,27 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_bricks": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:brick"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"has_bricks"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"early_game_overhaul:brick_furnace"
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"key": {
+		"#": {
+			"item": "minecraft:stick"
+		},
+		"X": {
+			"item": "minecraft:copper_ingot"
+		}
+	},
+	"pattern": [
+		"XX",
+		"X#",
+		" #"
+	],
+	"result": {
+		"item": "early_game_overhaul:copper_axe"
+	}
+}

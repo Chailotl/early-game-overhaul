@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "flint_axe",
+	"category": "equipment",
+	"key": {
+		"#": {
+			"item": "minecraft:stick"
+		},
+		"X": {
+			"item": "early_game_overhaul:flint_axe_head"
+		}
+	},
+	"pattern": [
+		"X#",
+		" #"
+	],
+	"result": {
+		"item": "early_game_overhaul:flint_axe"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "flint_axe",
+	"category": "equipment",
+	"key": {
+		"#": {
+			"item": "minecraft:stick"
+		},
+		"X": {
+			"tag": "minecraft:planks"
+		}
+	},
+	"pattern": [
+		"XX",
+		"X#",
+		" #"
+	],
+	"result": {
+		"item": "minecraft:air"
+	}
+}

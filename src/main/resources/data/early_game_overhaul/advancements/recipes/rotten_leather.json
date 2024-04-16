@@ -1,0 +1,28 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_rotten_flesh": {
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:rotten_flesh"
+						]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"has_rotten_flesh"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"early_game_overhaul:rotten_leather",
+			"early_game_overhaul:leather"
+		]
+	}
+}

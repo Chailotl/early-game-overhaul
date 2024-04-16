@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cookie"
+		},
+		"title": {
+			"text": "Chocolate Tweaks",
+			"bold": true,
+			"color": "gold"
+		},
+		"description": {
+			"text": "vanillachai.github.io",
+			"bold": false
+		},
+		"background": "minecraft:textures/block/dark_oak_trapdoor.png",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "challenge"
+	},
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "early_game_overhaul:block/copper_sample"
+			},
+			{
+				"model": "early_game_overhaul:block/copper_sample",
+				"y": 90
+			},
+			{
+				"model": "early_game_overhaul:block/copper_sample",
+				"y": 180
+			},
+			{
+				"model": "early_game_overhaul:block/copper_sample",
+				"y": 270
+			}
+		]
+	}
+}
