@@ -30,11 +30,11 @@ public class EarlyGameOverhaul implements ModInitializer
 	public static final Item ROTTEN_LEATHER = new Item(new FabricItemSettings());
 
 	public static final Item FLINT_AXE = new AxeItem(ToolMaterials.WOOD, 6.0F, -3.2F, new Item.Settings());
-	public static final Item COPPER_SWORD	 = new AxeItem(ToolMaterials.STONE, 3, -2.4F, new Item.Settings());
-	public static final Item COPPER_PICKAXE = new AxeItem(ToolMaterials.STONE, 1, -2.8F, new Item.Settings());
+	public static final Item COPPER_SWORD	 = new SwordItem(ToolMaterials.STONE, 3, -2.4F, new Item.Settings());
+	public static final Item COPPER_PICKAXE = new PickaxeItem(ToolMaterials.STONE, 1, -2.8F, new Item.Settings());
 	public static final Item COPPER_AXE = new AxeItem(ToolMaterials.STONE, 7.0F, -3.2F, new Item.Settings());
-	public static final Item COPPER_SHOVEL = new AxeItem(ToolMaterials.STONE, 1.5F, -3.0F, new Item.Settings());
-	public static final Item COPPER_HOE = new AxeItem(ToolMaterials.STONE, -1, -2.0F, new Item.Settings());
+	public static final Item COPPER_SHOVEL = new ShovelItem(ToolMaterials.STONE, 1.5F, -3.0F, new Item.Settings());
+	public static final Item COPPER_HOE = new HoeItem(ToolMaterials.STONE, -1, -2.0F, new Item.Settings());
 
 	// Blocks
 	public static final Block COAL_SAMPLE = new OreSampleBlock(FabricBlockSettings.create().strength(0.5f));
