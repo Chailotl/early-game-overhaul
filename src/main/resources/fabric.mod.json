@@ -7,6 +7,9 @@
 	"authors": [
 		"Chai"
 	],
+	"contributors": [
+		"Applebax"
+	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/chais-early-game-overhaul/",
 		"sources": "https://github.com/chailotl/early-game-overhaul",
@@ -19,7 +22,7 @@
 			}
 		}
 	},
-	"license": "CC0-1.0",
+	"license": "LGPL-3.0",
 	"icon": "assets/early_game_overhaul/icon.png",
 	"environment": "*",
 	"entrypoints": {
