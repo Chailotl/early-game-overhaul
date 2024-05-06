@@ -6,7 +6,7 @@
 }
 ```
 
-Madeira só pode ser extraída com machados da mesma forma que pedra só pode ser extraída com uma picareta, então de início, você precisará de um machado de sílex.
+Madeira só pode ser extraída com machados assim como pedras só podem ser extraídas com uma picareta, então você precisará de um machado de sílex.
 
 <recipe;early_game_overhaul:flint_axe>
 
@@ -19,8 +19,7 @@ Felizmente, podemos diminuir esta receita usando dois componentes fáceis de se 
 
 ;;;;;
 
-Primeiro, quebre o sílex no formato de uma cabeça de machado, e afixe-a a um cabo de madeira.
-
+Primeiro, coloque o sílex no formato de uma cabeça de machado, e afixe-a a um cabo de madeira.
 <recipe;early_game_overhaul:flint_axe_head>
 
 <recipe;early_game_overhaul:flint_axe_from_axe_head>

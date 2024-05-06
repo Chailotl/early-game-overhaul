@@ -1,6 +1,6 @@
 ```json
 {
-	"title": "Subindo para Ferramentas de Cobre",
+	"title": "Avançando para Ferramentas de Cobre",
 	"icon": "early_game_overhaul:copper_pickaxe",
 	"ordinal": 4
 }
