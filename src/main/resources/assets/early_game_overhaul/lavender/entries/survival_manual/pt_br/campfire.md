@@ -6,8 +6,7 @@
 }
 ```
 
-Uma fogueira é sua melhor amiga na selva. Ela manterá você quente, iluminará seus arredores, e preparará sua comida sem custos.
-
+Uma fogueira é sua melhor amiga na região selvagem. Ela manterá você quente, iluminará seus arredores, e preparará sua comida sem custos.
 
 <recipe;minecraft:campfire>
 
