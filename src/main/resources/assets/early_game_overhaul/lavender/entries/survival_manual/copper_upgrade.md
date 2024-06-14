@@ -18,4 +18,4 @@ You can obtain copper ingots by smelting raw copper in a [furnace](^early_game_o
 
 Raw copper is usually mined underground, but you can find copper samples on the surface too, though less frequently than coal samples.
 
-<item;early_game_overhaul:copper_sample>
+<|item-spotlight@lavender:book_components|item=early_game_overhaul:copper_sample|>

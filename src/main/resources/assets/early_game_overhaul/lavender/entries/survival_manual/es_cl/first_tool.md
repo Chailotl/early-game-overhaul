@@ -21,17 +21,17 @@ Afortunadamente, podremos simplificar esta receta en dos partes mas fáciles de 
 
 Primero, da forma a la cabeza de la hacha, después, únela al mango.
 
-<recipe;early_game_overhaul:flint_axe_head>
+<recipe_2x2;early_game_overhaul:flint_axe_head>
 
-<recipe;early_game_overhaul:flint_axe_from_axe_head>
+<recipe_2x2;early_game_overhaul:flint_axe_from_axe_head>
 
 ;;;;;
 
 Puedes encontrar palos al romper hojas, arbustos secos, brotes y bambú.
 
-<recipe;early_game_overhaul:stick_from_sapling>
+<recipe_1x1;early_game_overhaul:stick_from_sapling>
 
-<recipe;minecraft:stick_from_bamboo_item>
+<recipe_2x2;minecraft:stick_from_bamboo_item>
 
 ;;;;;
 
@@ -40,4 +40,4 @@ La grava de vez en cuando suelta pedernal al ser rota, y puedes encontrarla en l
 
 Puedes crear dos de grava a pedernal en un apuro.
 
-<recipe;early_game_overhaul:flint_from_gravel>
+<recipe_2x2;early_game_overhaul:flint_from_gravel>

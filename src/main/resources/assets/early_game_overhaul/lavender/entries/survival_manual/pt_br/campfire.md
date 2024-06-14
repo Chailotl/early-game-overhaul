@@ -17,4 +17,4 @@ Para fabricar uma, você precisará de madeira, gravetos e carvão.
 
 Se você não puder minerar carvão nas cavernas, você pode encontrar amostras soltas na superfície. Elas são encontradas mais frequentemente em áreas com pedras expostas, como costas rochosas.
 
-<item;early_game_overhaul:coal_sample>
+<|item-spotlight@lavender:book_components|item=early_game_overhaul:coal_sample|>

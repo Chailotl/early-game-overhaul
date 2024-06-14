@@ -1,5 +1,6 @@
 {
 	"dynamic_book_name": {
 		"translate": "item.early_game_overhaul.survival_manual"
-	}
+	},
+	"sushi_features": true
 }

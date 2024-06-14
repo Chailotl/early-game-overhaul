@@ -17,4 +17,4 @@ Pentru a crafta unul vei avea nevoie de câțiva bușteni, câteva bețe si o bu
 
 În cazul in care nu poți săpa pentru cărbune, poți găsi câteva mostre la suprafață. Acestea se generează mai des in locuri stâncoase.
 
-<item;early_game_overhaul:coal_sample>
+<|item-spotlight@lavender:book_components|item=early_game_overhaul:coal_sample|>

@@ -20,17 +20,18 @@ Felizmente, podemos diminuir esta receita usando dois componentes fáceis de se 
 ;;;;;
 
 Primeiro, coloque o sílex no formato de uma cabeça de machado, e afixe-a a um cabo de madeira.
-<recipe;early_game_overhaul:flint_axe_head>
 
-<recipe;early_game_overhaul:flint_axe_from_axe_head>
+<recipe_2x2;early_game_overhaul:flint_axe_head>
+
+<recipe_2x2;early_game_overhaul:flint_axe_from_axe_head>
 
 ;;;;;
 
 Você pode encontrar gravetos quebrando folhas, arbustos secos, mudas e bambu.
 
-<recipe;early_game_overhaul:stick_from_sapling>
+<recipe_1x1;early_game_overhaul:stick_from_sapling>
 
-<recipe;minecraft:stick_from_bamboo_item>
+<recipe_2x2;minecraft:stick_from_bamboo_item>
 
 ;;;;;
 
@@ -39,4 +40,4 @@ Cascalhos às vezes dão sílex quando quebrados, e você pode encontrá-los em 
 
 Você também pode fabricar sílex com cascalhos.
 
-<recipe;early_game_overhaul:flint_from_gravel>
+<recipe_2x2;early_game_overhaul:flint_from_gravel>

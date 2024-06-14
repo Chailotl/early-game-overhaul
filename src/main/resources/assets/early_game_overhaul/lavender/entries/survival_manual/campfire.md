@@ -17,4 +17,4 @@ To craft one, you need some logs, a few sticks, and a piece of coal.
 
 If you can't mine for coal underground, you can find loose samples of it on the surface. It generates more abundantly on areas with exposed stone, like stony shores.
 
-<item;early_game_overhaul:coal_sample>
+<|item-spotlight@lavender:book_components|item=early_game_overhaul:coal_sample|>

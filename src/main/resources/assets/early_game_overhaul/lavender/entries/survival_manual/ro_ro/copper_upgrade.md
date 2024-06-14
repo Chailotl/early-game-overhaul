@@ -17,5 +17,4 @@ Poți obține lingouri utilizabile de cupru topind materiarul de bază într-un 
 <recipe;minecraft:copper_ingot_from_smelting_raw_copper>
 
 Cuprul crud este de obicei minat în subteran, dar mostre pot fi găsite la suprafața în cantități mai mici decât cele de cărbune.
-
-<item;early_game_overhaul:copper_sample>
+<|item-spotlight@lavender:book_components|item=early_game_overhaul:copper_sample|>
