@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
 	"id": "early_game_overhaul",
-	"version": "1.0.2",
-	"name": "Chai's Early Game Overhaul",
+	"version": "${version}",
+	"name": "${name}",
 	"description": "A vanilla-friendly overhaul to the early game progression",
 	"authors": [
 		"Chai"
@@ -39,9 +39,7 @@
 		"java": ">=17",
 		"fabric-api": "*",
 		"lavender": "*",
-		"owo-lib": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"owo-lib": "*",
+		"sushi_bar": "*"
 	}
 }

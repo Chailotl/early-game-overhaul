@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
+	id "me.modmuss50.mod-publish-plugin" version "0.5.1"
 }
 
 version = project.mod_version
@@ -17,6 +18,7 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven { url 'https://maven.wispforest.io' }
+	maven { url "https://maven.axoga.to/releases" }
 }
 
 dependencies {
@@ -31,13 +33,17 @@ dependencies {
 	modImplementation "io.wispforest:lavender:${project.lavender_version}"
 	modImplementation "io.wispforest:owo-lib:${project.owo_version}"
 	include "io.wispforest:owo-sentinel:${project.owo_version}"
+
+	modImplementation "com.chailotl:sushi_bar:${project.sushi_version}"
 }
 
 processResources {
 	inputs.property "version", project.version
+	inputs.property "name", project.mod_name
 
 	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+		expand "version": project.version,
+				"name": project.mod_name
 	}
 }
 
@@ -75,5 +81,27 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+}
+
+publishMods {
+	File changelogFile = new File("CHANGELOG.md")
+
+	file = remapJar.archiveFile
+	changelog = changelogFile.exists() ? changelogFile.text : ""
+	type = STABLE
+	displayName = "${project.mod_name} ${project.mod_version}"
+	modLoaders.add("fabric")
+
+	modrinth {
+		accessToken = providers.gradleProperty("modrinth_token").get()
+		projectId = "GOKjle9i"
+		minecraftVersionRange {
+			start = "1.20"
+			end = "1.20.4"
+		}
+		requires("fabric-api")
+		requires("lavender")
+		requires("sushi-bar")
 	}
 }
