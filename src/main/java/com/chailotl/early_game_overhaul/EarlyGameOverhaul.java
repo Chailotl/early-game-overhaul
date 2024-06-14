@@ -1,5 +1,6 @@
 package com.chailotl.early_game_overhaul;
 
+import com.chailotl.sushi_bar.RegistrationHelper;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -26,15 +27,17 @@ public class EarlyGameOverhaul implements ModInitializer
 	public static final Identifier REQUIRE_AXE_TAG_ID = new Identifier(MOD_ID, "require_axe");
 
 	// Items
-	public static final Item FLINT_AXE_HEAD = new Item(new FabricItemSettings());
-	public static final Item ROTTEN_LEATHER = new Item(new FabricItemSettings());
+	public static final RegistrationHelper register = new RegistrationHelper(MOD_ID);
 
-	public static final Item FLINT_AXE = new AxeItem(ToolMaterials.WOOD, 6.0F, -3.2F, new Item.Settings());
-	public static final Item COPPER_SWORD = new SwordItem(ToolMaterials.STONE, 3, -2.4F, new Item.Settings());
-	public static final Item COPPER_PICKAXE = new PickaxeItem(ToolMaterials.STONE, 1, -2.8F, new Item.Settings());
-	public static final Item COPPER_AXE = new AxeItem(ToolMaterials.STONE, 7.0F, -3.2F, new Item.Settings());
-	public static final Item COPPER_SHOVEL = new ShovelItem(ToolMaterials.STONE, 1.5F, -3.0F, new Item.Settings());
-	public static final Item COPPER_HOE = new HoeItem(ToolMaterials.STONE, -1, -2.0F, new Item.Settings());
+	public static final Item FLINT_AXE_HEAD = register.item("flint_axe_head");
+	public static final Item ROTTEN_LEATHER = register.item("rotten_leather");
+
+	public static final Item FLINT_AXE = register.item("flint_axe", new AxeItem(ToolMaterials.WOOD, 6.0F, -3.2F, new FabricItemSettings()));
+	public static final Item COPPER_SWORD = register.item("copper_sword", new SwordItem(ToolMaterials.STONE, 3, -2.4F, new FabricItemSettings()));
+	public static final Item COPPER_PICKAXE = register.item("copper_pickaxe", new PickaxeItem(ToolMaterials.STONE, 1, -2.8F, new FabricItemSettings()));
+	public static final Item COPPER_AXE = register.item("copper_axe", new AxeItem(ToolMaterials.STONE, 7.0F, -3.2F, new FabricItemSettings()));
+	public static final Item COPPER_SHOVEL = register.item("copper_shovel", new ShovelItem(ToolMaterials.STONE, 1.5F, -3.0F, new FabricItemSettings()));
+	public static final Item COPPER_HOE = register.item("copper_hoe", new HoeItem(ToolMaterials.STONE, -1, -2.0F, new FabricItemSettings()));
 
 	// Blocks
 	public static final Block COAL_SAMPLE = new OreSampleBlock(FabricBlockSettings.create().strength(0.5f));
@@ -43,18 +46,6 @@ public class EarlyGameOverhaul implements ModInitializer
 	@Override
 	public void onInitialize()
 	{
-		// Items
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "flint_axe_head"), FLINT_AXE_HEAD);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "rotten_leather"), ROTTEN_LEATHER);
-
-		// Tools
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "flint_axe"), FLINT_AXE);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "copper_sword"), COPPER_SWORD);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "copper_pickaxe"), COPPER_PICKAXE);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "copper_axe"), COPPER_AXE);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "copper_shovel"), COPPER_SHOVEL);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "copper_hoe"), COPPER_HOE);
-
 		// Blocks
 		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "coal_sample"), COAL_SAMPLE);
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "coal_sample"), new BlockItem(COAL_SAMPLE, new FabricItemSettings()));
