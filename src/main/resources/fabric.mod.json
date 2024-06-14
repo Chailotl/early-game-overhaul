@@ -27,7 +27,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.chailotl.early_game_overhaul.EarlyGameOverhaul"
+			"com.chailotl.early_game_overhaul.Main"
 		]
 	},
 	"mixins": [

@@ -16,7 +16,7 @@ import net.minecraft.world.gen.GenerationStep;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class EarlyGameOverhaul implements ModInitializer
+public class Main implements ModInitializer
 {
 	public static final String MOD_ID = "early_game_overhaul";
 	public static final Logger LOGGER = LoggerFactory.getLogger("early_game_overhaul");

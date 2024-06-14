@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import static com.chailotl.early_game_overhaul.EarlyGameOverhaul.REQUIRE_AXE_TAG_ID;
+import static com.chailotl.early_game_overhaul.Main.REQUIRE_AXE_TAG_ID;
 
 @Mixin(AbstractBlock.AbstractBlockState.class)
 public abstract class InjectAbstractBlock
