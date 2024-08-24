@@ -84,24 +84,26 @@ publishing {
 	}
 }
 
-publishMods {
-	File changelogFile = new File("CHANGELOG.md")
+if (project.gradle.getProperties().get("modrinth_token") != null) {
+	publishMods {
+		File changelogFile = new File("CHANGELOG.md")
 
-	file = remapJar.archiveFile
-	changelog = changelogFile.exists() ? changelogFile.text : ""
-	type = STABLE
-	displayName = "${project.mod_name} ${project.mod_version}"
-	modLoaders.add("fabric")
+		file = remapJar.archiveFile
+		changelog = changelogFile.exists() ? changelogFile.text : ""
+		type = STABLE
+		displayName = "${project.mod_name} ${project.mod_version}"
+		modLoaders.add("fabric")
 
-	modrinth {
-		accessToken = providers.gradleProperty("modrinth_token").get()
-		projectId = "GOKjle9i"
-		minecraftVersionRange {
-			start = "1.20"
-			end = "1.20.4"
+		modrinth {
+			accessToken = providers.gradleProperty("modrinth_token").get()
+			projectId = "GOKjle9i"
+			minecraftVersionRange {
+				start = "1.20"
+				end = "1.20.4"
+			}
+			requires("fabric-api")
+			requires("lavender")
+			requires("sushi-bar")
 		}
-		requires("fabric-api")
-		requires("lavender")
-		requires("sushi-bar")
 	}
 }
