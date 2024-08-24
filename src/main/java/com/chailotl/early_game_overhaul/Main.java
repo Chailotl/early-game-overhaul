@@ -11,8 +11,11 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.PlacedFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,10 +24,10 @@ public class Main implements ModInitializer
 	public static final String MOD_ID = "early_game_overhaul";
 	public static final Logger LOGGER = LoggerFactory.getLogger("early_game_overhaul");
 
-	public static final Identifier HAS_SURFACE_ORE_ID = new Identifier(MOD_ID, "has_surface_ore");
-	public static final Identifier SURFACE_ORE_COMMON_FEATURE_ID = new Identifier(MOD_ID, "patch_surface_ore_common");
-	public static final Identifier SURFACE_ORE_RARE_FEATURE_ID = new Identifier(MOD_ID, "patch_surface_ore_rare");
-	public static final Identifier REQUIRE_AXE_TAG_ID = new Identifier(MOD_ID, "require_axe");
+	public static final TagKey<Block> REQUIRE_AXE_TAG = TagKey.of(RegistryKeys.BLOCK, new Identifier(MOD_ID, "require_axe"));
+	public static final TagKey<Biome> HAS_SURFACE_ORE_TAG = TagKey.of(RegistryKeys.BIOME, new Identifier(MOD_ID, "has_surface_ore"));
+	public static final RegistryKey<PlacedFeature> SURFACE_ORE_COMMON_FEATURE = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID, "patch_surface_ore_common"));
+	public static final RegistryKey<PlacedFeature> SURFACE_ORE_RARE_FEATURE = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID, "patch_surface_ore_rare"));
 
 	// Items
 	public static final RegistrationHelper register = new RegistrationHelper(MOD_ID);
@@ -74,15 +77,15 @@ public class Main implements ModInitializer
 
 		// BiomeSelectors.tag() isn't working :/
 		BiomeModifications.addFeature(
-				  //BiomeSelectors.tag(TagKey.of(RegistryKeys.BIOME, HAS_SURFACE_ORE_ID)),
-				  BiomeSelectors.foundInOverworld(),
-				  GenerationStep.Feature.VEGETAL_DECORATION,
-				  RegistryKey.of(RegistryKeys.PLACED_FEATURE, SURFACE_ORE_COMMON_FEATURE_ID));
+			//BiomeSelectors.tag(HAS_SURFACE_ORE_TAG),
+			BiomeSelectors.foundInOverworld(),
+			GenerationStep.Feature.VEGETAL_DECORATION,
+			SURFACE_ORE_COMMON_FEATURE);
 
 		BiomeModifications.addFeature(
-				  //BiomeSelectors.tag(TagKey.of(RegistryKeys.BIOME, HAS_SURFACE_ORE_ID)),
-				  BiomeSelectors.foundInOverworld(),
-				  GenerationStep.Feature.VEGETAL_DECORATION,
-				  RegistryKey.of(RegistryKeys.PLACED_FEATURE, SURFACE_ORE_RARE_FEATURE_ID));
+			  //BiomeSelectors.tag(HAS_SURFACE_ORE_TAG),
+			  BiomeSelectors.foundInOverworld(),
+			  GenerationStep.Feature.VEGETAL_DECORATION,
+			  SURFACE_ORE_RARE_FEATURE);
 	}
 }
